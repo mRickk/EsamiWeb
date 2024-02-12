@@ -1,0 +1,2 @@
+L'approccio Mobile First consiste nella progettazione e nel design dell'interfaccia di un sito web partendo dal layout portrait (verticale) tipico del mondo mobile.
+Ci sono numerevoli vantaggi, infatti l'interfaccia mobile e' piu' complessa e affrontarla per prima puo' essere un vantaggio, per cui il processo per rendere responsive il sito diventa piu semplice passando dal design mobile a quello desktop.
