@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bilancio di Genere</title>
+</head>
+<body>
+    <table>
+        <caption>Bilancio di Genere: personale al 2020</caption>
+        <thead>
+            <tr>
+                <th id="inquadramento" scope="col">inquadramento</th>
+                <th id="personale" scope="col">personale</th>
+                <th id="unitpersonale" scope="col">unità di personale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="donne" scope="rowgroup" rowspan="2" headers="inquadramento">donne</th>
+                <th id="docdonne" scope="row" headers="personale">docenti</th>
+                <td headers="unitpersonale docdonne donne">1.782</td>
+            </tr>
+            <tr>
+                <th id="ammdonne" scope="row" headers="personale">amministrativi</th>
+                <td headers="unitpersonale ammdonne donne">1.012</td>
+            </tr>
+            <tr>
+                <th id="uomini" scope="rowgroup" rowspan="2" headers="inquadramento">uomini</th>
+                <th id="docuom" scope="row" headers="personale">docenti</th>
+                <td headers="unitpersonale docuom uomini">1.497</td>
+            </tr>
+            <tr>
+                <th id="ammuom" scope="row" headers="personale">amministrativi</th>
+                <td headers="unitpersonale ammuom uomini">1.246</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
