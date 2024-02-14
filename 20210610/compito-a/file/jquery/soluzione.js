@@ -1,25 +1,40 @@
 window.onload = function() {
     document.querySelector("button").addEventListener("click", function() {
         const xhttp = new XMLHttpRequest();
-        let jsonResponse;
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                jsonResponse = JSON.parse(this.responseText);
-                let main = document.querySelector("main");
+                const jsonResponse = JSON.parse(this.responseText);
+                const main = document.querySelector("main");
                 Array.from(jsonResponse.data).forEach(e => {
-                    let div = document.createElement("div");
-                    let ul = document.createElement("ul");
-                    let liId = document.createElement("li");
-                    liId.innerHTML = e.id;
-                    ul.appendChild(liId);
-                    let liName = document.createElement("li");
-                    liId.innerHTML = e.name;
-                    ul.appendChild(liName);
-                    let liType = document.createElement("li");
-                    liId.innerHTML = e.type;
-                    ul.appendChild(liType);
-                    div.appendChild(ul);
-                    
+                    const div = document.createElement("div");
+                    div.innerHTML = 
+                    `
+                    <ul>
+                        <li>${e.id}</li>
+                        <li>${e.name}</li>
+                        <li>${e.type}</li>
+                    </ul>
+                    `
+                    const upButton = document.createElement("button");
+                    upButton.textContent = "sopra";
+                    upButton.addEventListener("click", function() {
+                        const parent = this.parentNode;
+                        const sibling = parent.previousSibling;
+                        if (sibling !== null) {
+                            main.insertBefore(parent, sibling);
+                        }
+                    });
+                    div.appendChild(upButton);
+                    const downButton = document.createElement("button");
+                    downButton.textContent = "sotto";
+                    downButton.addEventListener("click", function() {
+                        const parent = this.parentNode;
+                        const sibling = parent.nextSibling;
+                        if (sibling !== null) {
+                            main.insertBefore(parent, sibling);
+                        }
+                    });
+                    div.appendChild(downButton);
                     main.appendChild(div);
                 });
             }
