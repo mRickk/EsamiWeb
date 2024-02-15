@@ -1,0 +1,62 @@
+h1 {
+    text-decoration: overline underline;
+    padding-left: 20%;
+}
+
+fieldset:first-of-type {
+    float: right;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+fieldset:first-of-type > input {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 5px 0 5px;
+}
+
+fieldset:first-of-type > legend {
+    text-align: left;
+}
+
+fieldset {
+    border: 2px blue dotted;
+}
+
+fieldset, input[type="submit"] {
+    width: 40%;
+    margin: 0 2%;
+}
+
+fieldset:last-of-type {
+    float: left;
+    padding: 0 0 10px 0;
+}
+
+fieldset:last-of-type > label {
+    padding: 0 0 0 10px;
+}
+
+fieldset:last-of-type > input[type="radio"] {
+    margin: 0;
+    display: list-item;
+}
+
+input[type="submit"] {
+    float: right;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    rotate: -10deg;
+    margin-top: 4%;
+    text-decoration: overline;
+}
+
+input[type="submit"]:hover {
+    color: black;
+    background-color: yellow;
+    transition-duration: 3s;
+}
