@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ordine</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome"/>
+                </li>
+                <li>
+                    <label for="cognome">Cognome</label>
+                    <input type="text" id="cognome" name="cognome"/>
+                </li>
+                <li>
+                    <label for="eta">Età</label>
+                    <input type="number" id="eta" name="eta"/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Personalizzazione</legend>
+            <ul>
+                <li>
+                    <input type="radio" id="manic-lunghe" name="modello" value="Maniche lunghe"/>
+                    <label for="manic-lunghe">Maniche lunghe</label>
+                    <input type="radio" id="manic-corte" name="modello" value="Maniche corte"/>
+                    <label for="manic-corte">Maniche corte</label>
+                    <input type="radio" id="felpa" name="modello" value="Felpa"/>
+                    <label for="felpa">Felpa</label>
+                </li>
+                <li>
+                    <label for="colore">Colore</label>
+                    <input type="color" id="colore" name="colore"/>
+                </li>
+            </ul>
+        </fieldset>
+        <label for="invia" hidden>Invia</label>
+        <input type="submit" id="invia" value="Invia"/>
+        <label for="cancella" hidden>Cancella</label>
+        <input type="reset" id="cancella" value="Cancella"/>
+    </form>
+</body>
+</html>
