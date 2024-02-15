@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prenotazione</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Anagrafica</legend>
+            <ul>
+                <li>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome"/>
+                </li>
+                <li>
+                    <label for="cognome">Cognome</label>
+                    <input type="text" name="cognome" id="cognome"/>
+                </li>
+                <li>
+                    <label for="annonascita">Anno di nascita</label>
+                    <input type="number" name="annonascita" id="annonascita"/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Prenotazione</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" id="prestazione1" name="prestazione1" value="Tampone"/>
+                    <label for="prestazione1"> Tampone</label>
+                    <input type="checkbox" id="prestazione2" name="prestazione2" value="Sierologico"/>
+                    <label for="prestazione2"> Sierologico</label>
+                    <input type="checkbox" id="prestazione3" name="prestazione3" value="Vaccino"/>
+                    <label for="prestazione3"> Vaccino</label>
+                </li>
+                <li>
+                    <input type="radio" id="farm" name="luogo" value="Farmacia"/>
+                    <label for="farm">Farmacia</label>
+                    <input type="radio" id="med" name="luogo" value="Medico di famiglia"/>
+                    <label for="med">Medico di famiglia</label>
+                    <input type="radio" id="amb" name="luogo" value="Ambulatorio"/>
+                    <label for="amb">Ambulatorio</label>
+                    <input type="radio" id="osp" name="luogo" value="Ospedale"/>
+                    <label for="osp">Ospedale</label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="Invia"/>
+        <input type="reset" value="Cancella"/>
+    </form>
+</body>
+</html>
